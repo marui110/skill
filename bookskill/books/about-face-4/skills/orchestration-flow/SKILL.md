@@ -1,10 +1,6 @@
 ---
 name: orchestration-flow
-description: |
-  当用户需要设计流畅的交互节奏、避免打断用户工作流时使用。适用于：产品频繁弹出对话框打断用户、
-  交互流程碎片化、用户抱怨"操作太繁琐"。语言信号："怎么减少弹窗打断""交互节奏怎么设计"
-  "用户说操作太繁琐""怎么让交互更流畅""对话框是不是太多了"。
-  不适用于：纯视觉动效设计、纯信息架构、不需要考虑交互节奏的场景。
+description: 设计跨设备、跨时间的产品体验流程。适用于产品需要跨多个设备或平台使用、用户体验不连贯时。语言信号："跨设备体验怎么设计""用户旅程怎么串联"。
 source_book: 《About Face 4: 交互设计精髓》 Alan Cooper 等
 source_chapter: 第11章
 tags: [flow, orchestration, interaction-rhythm, design-principle]

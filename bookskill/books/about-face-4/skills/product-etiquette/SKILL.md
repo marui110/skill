@@ -1,11 +1,6 @@
 ---
 name: product-etiquette
-description: |
-  当用户需要设计产品的"行为品格"时使用。适用于：产品行为让用户感到被冒犯或挫败、
-  需要定义产品应该如何"对待"用户、评估产品是否体贴周到。
-  语言信号："产品应该怎么对待用户""为什么用户觉得被冒犯""产品应该有什么品格"
-  "怎么让产品更体贴""软件礼仪"。不适用于：纯功能设计（不涉及行为态度）、
-  纯视觉美化、技术实现问题。
+description: 数字产品的社交礼仪设计原则。适用于产品需要与用户建立信任关系、交互过于机械时。语言信号："产品怎么更人性化""交互太生硬了"。
 source_book: 《About Face 4: 交互设计精髓》 Alan Cooper 等
 source_chapter: 第8章
 tags: [etiquette, product-behavior, design-principle, user-respect]

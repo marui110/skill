@@ -1,9 +1,6 @@
 ---
 name: navigation-design
-description: |
-  当用户需要设计或优化产品导航时使用。适用于：网站导航、移动应用导航、复杂系统导航。
-  语言信号："用户找不到页面""不知道自己在哪里""导航太复杂了"。
-  不适用于：简单的单页应用、无导航需求的产品。
+description: 提供清晰的"你在这里"指示，减少用户迷路感。适用于信息架构复杂、用户经常迷路的产品。语言信号："用户找不到内容""导航怎么设计"。
 source_book: 《点石成金：访客至上的Web和移动可用性设计秘笈》
 source_chapter: 第6章
 tags: [usability, navigation, information-architecture, design-pattern]

@@ -1,9 +1,6 @@
 ---
 name: dont-make-me-think
-description: |
-  当用户需要设计或评估数字产品的可用性时使用。适用于：从零开始设计产品、评估现有产品可用性、优化用户体验。
-  语言信号："用户说我的产品难用""用户找不到功能入口""页面太复杂了"。
-  不适用于：纯视觉设计、纯技术架构、已有清晰可用性方案只需执行的场景。
+description: 网页应该是自明的，用户无需思考就能理解和使用。适用于所有需要提升可用性的设计场景。语言信号："用户看不懂这个界面""这个设计太复杂了"。
 source_book: 《点石成金：访客至上的Web和移动可用性设计秘笈》
 source_chapter: 第1章
 tags: [usability, design-principle, user-experience, krug]

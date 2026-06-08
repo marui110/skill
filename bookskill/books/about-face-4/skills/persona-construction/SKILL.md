@@ -1,9 +1,6 @@
 ---
 name: persona-construction
-description: |
-  当用户需要为产品设计构造用户模型时使用。适用于：团队对"用户是谁"理解不一致、设计决策缺乏用户锚点、
-  需要从用户研究数据中提炼设计方向。语言信号："用户画像怎么做""我们的用户到底是谁""怎么避免为模糊的'用户'设计"
-  "用户研究数据怎么用"。不适用于：已有明确单一用户群的产品、纯营销用用户画像、不需要设计决策的场景。
+description: 将用户研究数据转化为具体、可共情的设计锚点（人物角色）。适用于用户研究数据难以转化为设计决策时。语言信号："怎么建立用户画像""用户研究数据怎么用"。
 source_book: 《About Face 4: 交互设计精髓》 Alan Cooper 等
 source_chapter: 第3章
 tags: [persona, user-modeling, design-tool, methodology]

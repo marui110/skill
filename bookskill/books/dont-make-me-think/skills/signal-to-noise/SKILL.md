@@ -1,9 +1,6 @@
 ---
 name: signal-to-noise
-description: |
-  当用户需要优化页面信息呈现时使用。适用于：内容密集型页面、仪表盘、移动应用、信息展示。
-  语言信号："页面太乱了""找不到重点""干扰太多"。
-  不适用于：纯视觉艺术设计、简单功能按钮、无信息展示需求的场景。
+description: 最大化有用信息比例，最小化视觉干扰。适用于信息过载、界面杂乱的产品。语言信号："界面太乱了""信息太多"。
 source_book: 《点石成金：访客至上的Web和移动可用性设计秘笈》
 source_chapter: 第3章
 tags: [usability, visual-design, information-presentation, design-principle]

@@ -1,10 +1,6 @@
 ---
 name: product-posture
-description: |
-  当用户需要决定产品的交互姿态和注意力策略时使用。适用于：设计新产品不确定交互风格、
-  产品功能混杂不知如何统一体验、评估产品是否给了用户正确的注意力预期。
-  语言信号："这个产品应该怎么呈现""用户会花多少注意力""独占应用和暂时应用有什么区别"
-  "产品姿态怎么定"。不适用于：纯视觉风格选择、纯技术架构决策、已有明确交互范式的产品。
+description: 根据产品使用频率和场景决定产品的交互姿态（暂态vs姿态）。适用于设计产品首次启动体验、决定界面信息密度时。语言信号："首次使用怎么设计""界面信息太多还是太少"。
 source_book: 《About Face 4: 交互设计精髓》 Alan Cooper 等
 source_chapter: 第9章
 tags: [posture, interaction-style, attention-design, framework]

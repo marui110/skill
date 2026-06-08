@@ -1,10 +1,6 @@
 ---
 name: scenario-driven-design
-description: |
-  当用户需要把用户研究转化为设计方案时使用。适用于：有了人物模型但不知道如何设计具体交互、
-  需要从用户目标推导设计需求、区分"需求"和"功能"。语言信号："怎么从用户研究到设计方案"
-  "需求怎么提炼""场景和用例有什么区别""设计需求怎么写"。不适用于：已有明确功能列表只需实现、
-  纯技术需求分析、不需要用户视角的系统设计。
+description: 用具体场景驱动设计决策的方法。适用于设计决策缺乏具体使用场景支撑、功能设计过于抽象时。语言信号："这个功能什么场景会用""场景怎么驱动设计"。
 source_book: 《About Face 4: 交互设计精髓》 Alan Cooper 等
 source_chapter: 第4-5章
 tags: [scenario, design-requirements, narrative-design, methodology]

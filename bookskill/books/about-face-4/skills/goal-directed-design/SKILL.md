@@ -1,9 +1,6 @@
 ---
 name: goal-directed-design
-description: |
-  当用户需要系统性地设计数字产品交互行为时使用。适用于：从零开始设计产品交互、产品功能堆砌但用户体验差、
-  需要把用户研究转化为设计方案。语言信号："怎么设计这个产品的交互""功能很多但用户不会用""如何从用户研究到设计方案"。
-  不适用于：纯视觉设计、纯技术架构设计、已有清晰交互方案只需执行的场景。
+description: 系统性设计数字产品交互行为的方法论。适用于从零开始设计产品交互、产品功能堆砌但用户体验差时。语言信号："怎么设计这个产品的交互""功能很多但用户不会用"。
 source_book: 《About Face 4: 交互设计精髓》 Alan Cooper 等
 source_chapter: 第1-6章
 tags: [interaction-design, design-process, goal-directed, methodology]

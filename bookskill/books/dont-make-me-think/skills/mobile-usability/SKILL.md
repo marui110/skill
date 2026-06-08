@@ -1,9 +1,6 @@
 ---
 name: mobile-usability
-description: |
-  当用户需要设计或优化移动端产品时使用。适用于：移动应用、响应式网站、移动网页。
-  语言信号："移动端体验不好""用户说手机上不好用""移动端转化率低"。
-  不适用于：纯桌面端产品、硬件产品设计、非数字产品。
+description: 移动设备特有的可用性设计原则。适用于移动端产品设计、响应式设计。语言信号："移动端怎么设计""手机上不好用"。
 source_book: 《点石成金：访客至上的Web和移动可用性设计秘笈》
 source_chapter: 第10章
 tags: [usability, mobile, responsive-design, mobile-first]

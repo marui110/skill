@@ -1,9 +1,6 @@
 ---
 name: scanning-design
-description: |
-  当用户需要设计信息密集型页面时使用。适用于：内容型网站、新闻门户、文档页面、产品列表页。
-  语言信号："用户说找不到信息""页面内容太多了""用户不看我们的内容"。
-  不适用于：简单的功能型页面、交互型应用、纯视觉展示页面。
+description: 为扫描设计而非阅读设计，用户浏览网页的方式是扫读。适用于信息密集型页面设计。语言信号："用户不看内容""信息太多怎么组织"。
 source_book: 《点石成金：访客至上的Web和移动可用性设计秘笈》
 source_chapter: 第2-3章
 tags: [usability, content-design, information-architecture, scanning]

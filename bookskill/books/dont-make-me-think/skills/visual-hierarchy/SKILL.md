@@ -1,9 +1,6 @@
 ---
 name: visual-hierarchy
-description: |
-  当用户需要建立页面信息层级时使用。适用于：网页设计、移动应用、仪表盘、数据可视化。
-  语言信号："页面看起来很乱""不知道该看哪里""信息太多找不到重点"。
-  不适用于：简单的单功能页面、纯文本文档、无视觉设计需求的场景。
+description: 通过大小、颜色、留白等手段建立清晰的信息层级。适用于信息密集型页面、需要突出重点内容时。语言信号："重点不突出""信息层级不清晰"。
 source_book: 《点石成金：访客至上的Web和移动可用性设计秘笈》
 source_chapter: 第3章
 tags: [usability, visual-design, information-hierarchy, design-principle]

@@ -1,9 +1,6 @@
 ---
 name: mental-model-triangle
-description: |
-  当用户需要理解或诊断"为什么产品难用"时使用。适用于：产品暴露技术细节迫使用户像程序员思考、
-  评估界面是否符合用户预期、决定产品应该向用户展示什么行为。语言信号："为什么用户觉得难用""界面应该暴露技术细节吗"
-  "用户不理解这个功能""怎么让产品更直观"。不适用于：纯视觉美化、纯技术实现问题、不需要理解用户认知的场景。
+description: 理解为什么产品难用的三角框架（实现模型-心理模型-呈现模型）。适用于产品暴露技术细节迫使用户像程序员思考时。语言信号："为什么用户觉得难用""界面应该暴露技术细节吗"。
 source_book: 《About Face 4: 交互设计精髓》 Alan Cooper 等
 source_chapter: 第1章
 tags: [mental-model, design-decision, interaction-design, framework]

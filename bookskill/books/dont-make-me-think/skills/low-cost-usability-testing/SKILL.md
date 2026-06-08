@@ -1,9 +1,6 @@
 ---
 name: low-cost-usability-testing
-description: |
-  当用户需要进行可用性测试但资源有限时使用。适用于：产品迭代、设计验证、用户体验优化。
-  语言信号："我们没预算做测试""用户反馈不好但不知道为什么""怎么快速发现问题"。
-  不适用于：需要大规模统计数据的研究、纯定量分析、无产品原型的场景。
+description: 低成本、高频次的可用性测试方法（3个用户发现85%问题）。适用于需要快速验证设计、预算有限时。语言信号："怎么做可用性测试""测试要多少用户"。
 source_book: 《点石成金：访客至上的Web和移动可用性设计秘笈》
 source_chapter: 第9章
 tags: [usability, testing, user-research, methodology]
