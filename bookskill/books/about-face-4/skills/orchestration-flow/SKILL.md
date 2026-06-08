@@ -1,18 +1,7 @@
 ---
 name: orchestration-flow
 description: 设计跨设备、跨时间的产品体验流程。适用于产品需要跨多个设备或平台使用、用户体验不连贯时。语言信号："跨设备体验怎么设计""用户旅程怎么串联"。
-source_book: 《About Face 4: 交互设计精髓》 Alan Cooper 等
-source_chapter: 第11章
-tags: [flow, orchestration, interaction-rhythm, design-principle]
-related_skills:
-  - slug: product-posture
-    relation: depends-on
-  - slug: product-etiquette
-    relation: depends-on
-  - slug: mental-model-triangle
-    relation: composes-with
 ---
-
 # 编配与流设计
 
 ## R — 原文 (Reading)

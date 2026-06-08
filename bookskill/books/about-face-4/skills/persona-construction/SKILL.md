@@ -1,18 +1,7 @@
 ---
 name: persona-construction
 description: 将用户研究数据转化为具体、可共情的设计锚点（人物角色）。适用于用户研究数据难以转化为设计决策时。语言信号："怎么建立用户画像""用户研究数据怎么用"。
-source_book: 《About Face 4: 交互设计精髓》 Alan Cooper 等
-source_chapter: 第3章
-tags: [persona, user-modeling, design-tool, methodology]
-related_skills:
-  - slug: contextual-inquiry
-    relation: depends-on
-  - slug: goal-directed-design
-    relation: composes-with
-  - slug: scenario-driven-design
-    relation: composes-with
 ---
-
 # 人物模型构造法
 
 ## R — 原文 (Reading)

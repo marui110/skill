@@ -1,16 +1,7 @@
 ---
 name: contextual-inquiry
 description: 深入了解用户真实行为和目标的沉浸式用户研究方法。适用于产品决策基于假设而非用户事实、需要收集用户研究数据支撑设计时。语言信号："怎么做用户研究""用户访谈怎么做""怎么了解用户真实需求"。
-source_book: 《About Face 4: 交互设计精髓》 Alan Cooper 等
-source_chapter: 第2章
-tags: [user-research, contextual-inquiry, ethnography, methodology]
-related_skills:
-  - slug: persona-construction
-    relation: composes-with
-  - slug: goal-vs-task
-    relation: composes-with
 ---
-
 # 情境调查改进法
 
 ## R — 原文 (Reading)

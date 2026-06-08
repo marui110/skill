@@ -1,20 +1,7 @@
 ---
 name: goal-directed-design
 description: 系统性设计数字产品交互行为的方法论。适用于从零开始设计产品交互、产品功能堆砌但用户体验差时。语言信号："怎么设计这个产品的交互""功能很多但用户不会用"。
-source_book: 《About Face 4: 交互设计精髓》 Alan Cooper 等
-source_chapter: 第1-6章
-tags: [interaction-design, design-process, goal-directed, methodology]
-related_skills:
-  - slug: contextual-inquiry
-    relation: depends-on
-  - slug: persona-construction
-    relation: depends-on
-  - slug: scenario-driven-design
-    relation: depends-on
-  - slug: mental-model-triangle
-    relation: composes-with
 ---
-
 # 目标导向设计全流程
 
 ## R — 原文 (Reading)

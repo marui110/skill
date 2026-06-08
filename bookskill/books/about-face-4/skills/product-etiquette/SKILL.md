@@ -1,16 +1,7 @@
 ---
 name: product-etiquette
 description: 数字产品的社交礼仪设计原则。适用于产品需要与用户建立信任关系、交互过于机械时。语言信号："产品怎么更人性化""交互太生硬了"。
-source_book: 《About Face 4: 交互设计精髓》 Alan Cooper 等
-source_chapter: 第8章
-tags: [etiquette, product-behavior, design-principle, user-respect]
-related_skills:
-  - slug: mental-model-triangle
-    relation: depends-on
-  - slug: orchestration-flow
-    relation: composes-with
 ---
-
 # 数字产品礼仪
 
 ## R — 原文 (Reading)

@@ -1,18 +1,7 @@
 ---
 name: scenario-driven-design
 description: 用具体场景驱动设计决策的方法。适用于设计决策缺乏具体使用场景支撑、功能设计过于抽象时。语言信号："这个功能什么场景会用""场景怎么驱动设计"。
-source_book: 《About Face 4: 交互设计精髓》 Alan Cooper 等
-source_chapter: 第4-5章
-tags: [scenario, design-requirements, narrative-design, methodology]
-related_skills:
-  - slug: persona-construction
-    relation: depends-on
-  - slug: goal-vs-task
-    relation: depends-on
-  - slug: goal-directed-design
-    relation: composes-with
 ---
-
 # 场景驱动设计法
 
 ## R — 原文 (Reading)

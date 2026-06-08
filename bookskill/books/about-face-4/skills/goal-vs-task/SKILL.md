@@ -1,18 +1,7 @@
 ---
 name: goal-vs-task
 description: 区分用户为什么做和做什么的分析框架。适用于产品功能堆砌但用户仍不满意、需求文档写的是任务而非目标时。语言信号："用户到底想要什么""功能和目标的区别"。
-source_book: 《About Face 4: 交互设计精髓》 Alan Cooper 等
-source_chapter: 第1章、第3章
-tags: [goal, task, user-motivation, framework]
-related_skills:
-  - slug: contextual-inquiry
-    relation: depends-on
-  - slug: persona-construction
-    relation: composes-with
-  - slug: scenario-driven-design
-    relation: composes-with
 ---
-
 # 目标vs任务区分法
 
 ## R — 原文 (Reading)

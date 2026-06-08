@@ -1,18 +1,7 @@
 ---
 name: mental-model-triangle
 description: 理解为什么产品难用的三角框架（实现模型-心理模型-呈现模型）。适用于产品暴露技术细节迫使用户像程序员思考时。语言信号："为什么用户觉得难用""界面应该暴露技术细节吗"。
-source_book: 《About Face 4: 交互设计精髓》 Alan Cooper 等
-source_chapter: 第1章
-tags: [mental-model, design-decision, interaction-design, framework]
-related_skills:
-  - slug: goal-directed-design
-    relation: composes-with
-  - slug: product-etiquette
-    relation: composes-with
-  - slug: orchestration-flow
-    relation: composes-with
 ---
-
 # 实现模型-心理模型-呈现模型三角框架
 
 ## R — 原文 (Reading)

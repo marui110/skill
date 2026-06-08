@@ -1,16 +1,7 @@
 ---
 name: product-posture
 description: 根据产品使用频率和场景决定产品的交互姿态（暂态vs姿态）。适用于设计产品首次启动体验、决定界面信息密度时。语言信号："首次使用怎么设计""界面信息太多还是太少"。
-source_book: 《About Face 4: 交互设计精髓》 Alan Cooper 等
-source_chapter: 第9章
-tags: [posture, interaction-style, attention-design, framework]
-related_skills:
-  - slug: goal-directed-design
-    relation: composes-with
-  - slug: orchestration-flow
-    relation: composes-with
 ---
-
 # 产品姿态分类框架
 
 ## R — 原文 (Reading)
