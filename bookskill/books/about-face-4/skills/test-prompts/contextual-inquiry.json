@@ -1,0 +1,48 @@
+{
+  "skill": "contextual-inquiry",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "团队对用户的理解都来自自己的假设，没人真正去观察过用户怎么用产品",
+      "expected_behavior": "调用 contextual-inquiry, 建议到用户环境中观察真实行为",
+      "notes": "正面场景: 团队缺乏用户接触"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "用户在问卷里说他们经常用这个功能，但数据显示使用率很低，怎么回事？",
+      "expected_behavior": "调用 contextual-inquiry, 解释用户说的和做的不一样，需要观察而非仅询问",
+      "notes": "正面场景: 用户说vs做不一致"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "怎么做用户研究？发问卷还是做访谈？",
+      "expected_behavior": "调用 contextual-inquiry, 推荐情境调查法并解释四个改进原则",
+      "notes": "正面场景: 用户研究方法选择"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "帮我看一下这个A/B测试的结果",
+      "expected_behavior": "纯定量分析，不需要定性研究方法",
+      "notes": "诱饵: 定量分析"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我们已经做了充分的用户研究，数据很充分了",
+      "expected_behavior": "已有充分数据，不需要重复研究",
+      "notes": "诱饵: 研究已充分"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我们的用户是军事人员，无法进入他们的工作环境做观察",
+      "expected_behavior": "无法实地观察时，可用远程观察、日记研究等替代方法，但核心原则（观察而非仅询问）仍然适用",
+      "notes": "边界: 无法接触用户环境"
+    }
+  ]
+}

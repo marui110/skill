@@ -1,0 +1,48 @@
+{
+  "skill": "orchestration-flow",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "用户抱怨操作步骤太多，每做一步就要点确认",
+      "expected_behavior": "调用 orchestration-flow, 识别模态对话框打断流，建议用可撤销操作替代确认",
+      "notes": "正面场景: 过多确认打断"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "产品里弹窗太多了，用户总是被打断，怎么减少？",
+      "expected_behavior": "调用 orchestration-flow, 用非模态反馈替代模态对话框",
+      "notes": "正面场景: 弹窗过多"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "常用功能埋在三级菜单里，用户找不到也记不住快捷键",
+      "expected_behavior": "调用 orchestration-flow, 按使用频率分层组织交互元素",
+      "notes": "正面场景: 功能深埋菜单"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "页面切换的过渡动画应该用什么效果？",
+      "expected_behavior": "纯视觉动效，不是交互节奏问题",
+      "notes": "诱饵: 视觉动效"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "删除账户的确认对话框要不要保留？",
+      "expected_behavior": "安全关键操作，模态确认是必要的，不应建议移除",
+      "notes": "诱饵: 安全关键操作"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "AI助手应该主动提示还是等用户问？",
+      "expected_behavior": "用编配原则分析：主动提示应是非模态的（不打断流），等用户问则是'让用户指示'。取决于场景和姿态",
+      "notes": "边界: AI主动介入的度"
+    }
+  ]
+}

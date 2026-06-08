@@ -1,0 +1,48 @@
+{
+  "skill": "persona-construction",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "团队讨论设计时，每个人对'用户'的理解都不一样，产品经理说的用户和开发说的用户完全不是一回事",
+      "expected_behavior": "调用 persona-construction, 用具体人物模型替代弹性'用户'概念",
+      "notes": "正面场景: 弹性用户问题"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "做了8个用户访谈，数据很多但不知道怎么从中提炼出设计方向",
+      "expected_behavior": "调用 persona-construction, 用8步法从行为变量聚类构造人物模型",
+      "notes": "正面场景: 研究数据待提炼"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "产品功能越来越多，每个功能都在为不同的'用户'服务，感觉产品定位越来越模糊",
+      "expected_behavior": "调用 persona-construction, 用主要/次要人物模型明确设计优先级",
+      "notes": "正面场景: 功能发散缺乏锚点"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "帮我做一份用户画像用于广告投放",
+      "expected_behavior": "营销用画像关注购买行为，不是交互设计用人物模型",
+      "notes": "诱饵: 营销画像"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我们的用户就是大学生，很明确，不需要再分析了",
+      "expected_behavior": "用户群体明确且团队认知一致，不需要复杂人物模型",
+      "notes": "诱饵: 已有明确用户群"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我们只有2天时间做用户研究，来不及做完整的8步法",
+      "expected_behavior": "建议用临时人物模型（1页描述+目标），不做完整8步法",
+      "notes": "边界: 资源受限"
+    }
+  ]
+}

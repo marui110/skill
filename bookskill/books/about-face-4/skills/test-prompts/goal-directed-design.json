@@ -1,0 +1,48 @@
+{
+  "skill": "goal-directed-design",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我们团队要做一个在线教育平台，功能列表已经列了30多个，但不知道怎么设计交互让用户不迷路",
+      "expected_behavior": "调用 goal-directed-design, 建议从用户研究开始，用目标驱动而非功能驱动",
+      "notes": "正面场景: 功能堆砌但体验差"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "做完用户访谈了，收集了很多数据，但不知道怎么把这些变成设计方案",
+      "expected_behavior": "调用 goal-directed-design, 引导从研究→建模→场景→框架的完整流程",
+      "notes": "正面场景: 有研究数据但不知道下一步"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "产品开发团队里设计师和前端开发是同一批人，设计总是被技术实现牵着走",
+      "expected_behavior": "调用 goal-directed-design, 指出设计应先于编码，角色应分离",
+      "notes": "正面场景: 设计沦为编码副产品"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "帮我选一个React UI组件库",
+      "expected_behavior": "纯技术选型，不应调用交互设计方法论",
+      "notes": "诱饵: 技术选型"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "这个页面的配色方案怎么调整更好看？",
+      "expected_behavior": "纯视觉设计问题，不应调用目标导向设计",
+      "notes": "诱饵: 视觉美化"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我们产品只有一个核心功能，交互方案已经很明确了，直接开发就行",
+      "expected_behavior": "已有明确方案，不需要方法论，不应调用",
+      "notes": "边界: 方案已明确"
+    }
+  ]
+}

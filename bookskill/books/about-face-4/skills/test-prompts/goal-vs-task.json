@@ -1,0 +1,48 @@
+{
+  "skill": "goal-vs-task",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "产品功能都有了，但用户还是不满意，不知道还缺什么",
+      "expected_behavior": "调用 goal-vs-task, 诊断可能满足了任务但没满足目标",
+      "notes": "正面场景: 功能齐全但用户不满意"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "需求文档里写的都是'用户需要搜索功能''用户需要导出功能'，总觉得哪里不对",
+      "expected_behavior": "调用 goal-vs-task, 识别这些是任务/功能而非目标，引导提炼真正目标",
+      "notes": "正面场景: 需求=功能"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "技术升级后，用户原来的操作流程完全变了，怎么保证不流失用户？",
+      "expected_behavior": "调用 goal-vs-task, 任务变了但目标没变，围绕目标重新设计",
+      "notes": "正面场景: 技术变革下目标稳定性"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "这个SQL查询性能怎么优化？",
+      "expected_behavior": "纯技术问题，不涉及用户动机",
+      "notes": "诱饵: 技术优化"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "帮我列一下这个项目的开发任务清单",
+      "expected_behavior": "项目管理任务分解，不是用户目标分析",
+      "notes": "诱饵: 项目管理"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "用户说'我需要一键导出报表'，这是目标还是任务？",
+      "expected_behavior": "这是任务（'导出报表'是做什么），追问'为什么需要导出'才能找到目标（可能是'向领导汇报工作进展'）",
+      "notes": "边界: 目标和任务的灰色地带"
+    }
+  ]
+}

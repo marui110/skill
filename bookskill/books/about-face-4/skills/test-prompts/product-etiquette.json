@@ -1,0 +1,48 @@
+{
+  "skill": "product-etiquette",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "用户反馈说产品总是报错，错误消息让人觉得自己做错了什么",
+      "expected_behavior": "调用 product-etiquette, 识别'责怪用户'的不体贴行为，建议预防错误而非报错",
+      "notes": "正面场景: 软件责怪用户"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "AI聊天机器人应该有什么行为规范？怎么让它更'体贴'？",
+      "expected_behavior": "调用 product-etiquette, 用12个体贴特征指导AI行为设计",
+      "notes": "正面场景: AI行为规范"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "每次登录都要重新填一遍信息，产品好像完全不记得我是谁",
+      "expected_behavior": "调用 product-etiquette, 识别'不关注用户'的不体贴行为（不记住用户信息）",
+      "notes": "正面场景: 产品不关注用户"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "这个功能的技术实现方案选A还是B？",
+      "expected_behavior": "纯技术决策，不涉及产品行为态度",
+      "notes": "诱饵: 技术实现"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "页面布局应该用grid还是flexbox？",
+      "expected_behavior": "纯CSS布局技术，不涉及产品行为品格",
+      "notes": "诱饵: 布局技术"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "GDPR要求用户明确同意才能使用cookie，但弹窗确认很不体贴",
+      "expected_behavior": "法规要求的'不体贴'行为是必要的，但可以在合规范围内尽量减少打扰（如只首次弹出）",
+      "notes": "边界: 法规vs体贴的冲突"
+    }
+  ]
+}

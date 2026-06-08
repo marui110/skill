@@ -1,0 +1,48 @@
+{
+  "skill": "product-posture",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我们在做一个数据分析平台，有些功能用户会深度使用，有些只是偶尔点一下，不知道怎么统一设计风格",
+      "expected_behavior": "调用 product-posture, 识别独占和暂时姿态的差异，差异化设计",
+      "notes": "正面场景: 混合姿态产品"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "这个设置面板用户抱怨太复杂了，但其实选项就那么几个",
+      "expected_behavior": "调用 product-posture, 诊断暂时姿态产品被设计成独占姿态",
+      "notes": "正面场景: 姿态错误诊断"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "新产品的交互风格应该怎么定？用户会花多少时间在这个产品上？",
+      "expected_behavior": "调用 product-posture, 根据注意力投入确定姿态",
+      "notes": "正面场景: 新产品姿态决策"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "这个页面的配色应该用深色还是浅色？",
+      "expected_behavior": "纯视觉风格选择，不是姿态问题",
+      "notes": "诱饵: 视觉风格"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "邮件客户端的交互应该怎么设计？",
+      "expected_behavior": "邮件客户端姿态已被行业惯例确定（独占），不需要姿态分析",
+      "notes": "诱饵: 成熟产品类型"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我们的产品在手机上是短暂使用，在桌面上是深度使用，怎么处理？",
+      "expected_behavior": "同一产品在不同平台有不同姿态是合理的，应按平台分别设计",
+      "notes": "边界: 跨平台姿态差异"
+    }
+  ]
+}

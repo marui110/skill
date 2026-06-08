@@ -1,0 +1,48 @@
+{
+  "skill": "scenario-driven-design",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "需求文档写了一堆功能列表，但我不确定这些功能是不是用户真正需要的",
+      "expected_behavior": "调用 scenario-driven-design, 从场景提炼需求而非功能列表",
+      "notes": "正面场景: 需求=功能的问题"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "有了人物模型，但不知道怎么从人物模型推导出具体的交互设计",
+      "expected_behavior": "调用 scenario-driven-design, 用场景叙事连接人物模型和设计方案",
+      "notes": "正面场景: 人物模型到设计的桥梁"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "场景和用例有什么区别？我们团队一直在写用例",
+      "expected_behavior": "调用 scenario-driven-design, 区分场景（人的叙事）和用例（系统响应）",
+      "notes": "正面场景: 概念混淆"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "帮我写一个API接口文档",
+      "expected_behavior": "纯技术文档，不涉及用户交互设计",
+      "notes": "诱饵: 技术文档"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "功能列表已经确定，团队都认可，直接开始开发",
+      "expected_behavior": "已有明确方案，不需要场景驱动",
+      "notes": "诱饵: 方案已确定"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "用户故事和场景有什么区别？敏捷开发里我们一直写用户故事",
+      "expected_behavior": "解释区别：用户故事是需求条目，场景是叙事设计工具。但若团队已有成熟的用户故事流程，场景可以作为补充而非替代",
+      "notes": "边界: 与敏捷实践的融合"
+    }
+  ]
+}

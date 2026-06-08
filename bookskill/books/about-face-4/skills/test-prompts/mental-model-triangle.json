@@ -1,0 +1,48 @@
+{
+  "skill": "mental-model-triangle",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "用户反馈说我们的后台管理系统太难用了，到处都是技术术语",
+      "expected_behavior": "调用 mental-model-triangle, 诊断呈现模型暴露了实现模型",
+      "notes": "正面场景: 产品难用诊断"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "设计新功能时，团队争论要不要让用户看到底层的数据库结构",
+      "expected_behavior": "调用 mental-model-triangle, 用三角框架分析呈现模型应靠近心理模型",
+      "notes": "正面场景: 技术细节暴露决策"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "为什么用户总是不理解我们的产品逻辑？明明操作步骤写得很清楚",
+      "expected_behavior": "调用 mental-model-triangle, 诊断产品逻辑是实现模型而非用户心理模型",
+      "notes": "正面场景: 用户不理解产品"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "API接口返回500错误，帮我排查一下",
+      "expected_behavior": "纯技术问题，不应调用设计框架",
+      "notes": "诱饵: 技术bug"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "这个按钮的圆角用4px还是8px？",
+      "expected_behavior": "纯视觉细节，不涉及行为逻辑",
+      "notes": "诱饵: 视觉细节"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我们在做一个开发者工具，用户就是程序员，他们需要看到技术细节",
+      "expected_behavior": "开发者工具的呈现模型靠近实现模型是合理的，不应强行套用'靠近心理模型'",
+      "notes": "边界: 用户确实需要理解实现细节"
+    }
+  ]
+}
