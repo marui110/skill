@@ -20,7 +20,6 @@ description: >-
 | **同步脚本** | `~/Documents/code/rule/sync-global-agent-standards.sh` |
 | **Slash 命令** | `~/Documents/code/rule/commands/` |
 
-**禁止**直接改各端 symlink 副本（`~/.codex/skills`、`~/.workbuddy/skills`、`~/.trae-cn/skills`、`~/.agents/skills`、`~/.cursor/skills`、`~/.codebuddy/skills`）。
 
 **禁止**写入 `~/.cursor/skills-cursor/`（Cursor 内置）。
 
