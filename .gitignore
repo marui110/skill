@@ -1,0 +1,10 @@
+# Dependencies (never mirror into git)
+**/node_modules/
+
+# Nested clone metadata for local upstream pulls (not part of this repo)
+ui-skills/.git-upstream/
+
+# OS / editor
+.DS_Store
+*.swp
+.idea/
