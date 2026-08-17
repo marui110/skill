@@ -49,7 +49,6 @@ dws dev connect --robot-client-id <clientId> --robot-client-secret <clientSecret
 - `dev connect` 成功只代表本地 Stream 调试可用，不能代表机器人线上可用。
 - `dev connect` dry-run 或启动输出里的 `completionState=LOCAL_DEBUG_ONLY` / `doesNotPublish=true` 表示只完成本地调试，不得作为最终完成。
 - `robot result` 返回 `lifecycle.overallComplete=false`，或版本未进入 `RELEASE` / `AUDIT` / `UNDER_REVIEW` 前，不要总结“全部完成”“机器人已创建并成功连接”“可以在钉钉中 @机器人使用”。
-- “创建机器人并连接 qoder”类任务的闭环必须包含：建号完成、本地 qoder Stream 建联成功、版本已发布或已提交审批；若 `SELECT_APPROVER` 需要选审批人，则停在候选审批人选择。
 
 `robot result` 异步状态：
 
@@ -132,7 +131,7 @@ dws dev app credentials get --unified-app-id <unifiedAppId> --format json
 dws dev connect \
   --robot-client-id <clientId> --robot-client-secret <clientSecret>
 
-# 明确指定渠道（opencode/claudecode/qoder/qoderwork/workbuddy/codex/gemini/hermes/openclaw/custom）
+# 明确指定渠道（opencode/claudecode/workbuddy/codex/gemini/hermes/openclaw/custom）
 dws dev connect --channel opencode \
   --robot-client-id <clientId> --robot-client-secret <clientSecret>
 

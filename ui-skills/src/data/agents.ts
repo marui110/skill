@@ -183,16 +183,6 @@ export const agents: Agent[] = [
     websiteUrl: "https://roocode.com",
   },
   {
-    id: "trae",
-    name: "Trae",
-    description:
-      "Trae is an AI coding agent that supports the skills CLI for installing reusable knowledge across sessions.",
-    topics: ["Sessions", "Knowledge", "Workflow"],
-    sourceUrl: "https://www.ui-skills.com/?source=ui-skills.com",
-    faviconUrl: favicon("trae.ai"),
-    websiteUrl: "https://trae.ai",
-  },
-  {
     id: "vscode",
     name: "VS Code",
     description:

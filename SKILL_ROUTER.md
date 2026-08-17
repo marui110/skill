@@ -52,6 +52,7 @@
 | 架构 / 领域 | `codebase-design` / `domain-modeling` / `improve-codebase-architecture` |
 | API | `api-and-interface-design` |
 | Vercel 部署 | `deploy-to-vercel` / `vercel-*` |
+| Vercel Ready 仍 500 / 方言 env | `vercel-post-deploy-verify` |
 
 ## UI / 设计 / 动效
 

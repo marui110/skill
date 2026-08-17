@@ -22,7 +22,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 // All known harness directories
 const HARNESS_DIRS = [
   '.claude', '.cursor', '.gemini', '.codex', '.agents',
-  '.trae', '.trae-cn', '.pi', '.opencode', '.kiro', '.rovodev',
+  '.pi', '.opencode', '.kiro', '.rovodev',
 ];
 
 // Valid sub-command names
