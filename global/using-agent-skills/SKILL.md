@@ -1,6 +1,6 @@
 ---
 name: using-agent-skills
-description: Discovers and invokes agent skills. Use when starting a session or when you need to discover which skill applies to the current task. This is the meta-skill that governs how all other skills are discovered and invoked.
+description: Discovers and invokes agent skills. Use when starting a session, or when you need to decide which skill or workflow applies to the piece of work at hand. This is the meta-skill that governs how all other skills are discovered and invoked.
 ---
 
 # Using Agent Skills
@@ -8,20 +8,6 @@ description: Discovers and invokes agent skills. Use when starting a session or 
 ## Overview
 
 Agent Skills is a collection of engineering workflow skills organized by development phase. Each skill encodes a specific process that senior engineers follow. This meta-skill helps you discover and apply the right skill for your current task.
-
-**Router (prefer):** `~/Documents/code/skill/SKILL_ROUTER.md`  
-**Full catalog:** `~/Documents/code/skill/SKILLS_INDEX.md`  
-**Runtime path:** `~/.claude/skills/<name>/SKILL.md`
-
-### Same-topic priority
-
-- TDD → `test-driven-development` (not short `tdd`)
-- Merge review → `code-review-and-quality`; since-point dual-axis → `code-review`; multi-language guide → `code-review-skill`
-- Frontend taste → `design-taste-frontend` (not `-v1` unless compatibility)
-- UI work → `ui-skills-root` / `npx ui-skills start` first, then stack others
-- Engineering SaaS patterns → codeskill (`preview-first-sync`, `shadcn-app-components`, …)
-
-Auto-trigger: on matching user intent, read the skill in this turn — do not wait for the user to name it.
 
 ## Skill Discovery
 
@@ -33,6 +19,7 @@ Task arrives
     ├── Don't know what you want yet? ──────→ interview-me
     ├── Have a rough concept, need variants? → idea-refine
     ├── New project/feature/change? ──→ spec-driven-development
+    ├── No quality bar written down? ──→ constraint-driven-development
     ├── Have a spec, need tasks? ──────→ planning-and-task-breakdown
     ├── Implementing code? ────────────→ incremental-implementation
     │   ├── UI work? ─────────────────→ frontend-ui-engineering
@@ -124,7 +111,7 @@ Your job is surgical precision, not unsolicited renovation.
 
 Every skill includes a verification step. A task is not complete until verification passes. "Seems right" is never sufficient — there must be evidence (passing tests, build output, runtime data).
 
-Per-skill verification is the local check. The project-wide bar that applies to *every* change, regardless of which skill is active, is the Definition of Done: tests pass, no regressions, behavior verified at runtime, docs updated. See `references/definition-of-done.md`. It complements each task's acceptance criteria rather than replacing them.
+Per-skill verification is the local check. The project-wide bar that applies to *every* change, regardless of which skill is active, is the Definition of Done: tests pass, no regressions, behavior verified at runtime, docs updated. See `../../references/definition-of-done.md`. It complements each task's acceptance criteria rather than replacing them.
 
 ## Failure Modes to Avoid
 
